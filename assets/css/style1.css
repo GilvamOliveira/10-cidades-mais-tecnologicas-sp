@@ -1,0 +1,292 @@
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #1d2733;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ================================
+   CABEÇALHO
+================================ */
+
+header {
+    background: linear-gradient(135deg, #071952, #088395);
+    color: white;
+    padding: 60px 0 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+    max-width: 750px;
+    margin: auto;
+    color: #e7faff;
+}
+
+
+/* ================================
+   MENU
+================================ */
+
+nav {
+    margin-top: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #7ee8fa;
+}
+
+
+/* ================================
+   INTRODUÇÃO
+================================ */
+
+.introducao {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.introducao h2,
+.sobre h2 {
+    color: #071952;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.introducao p {
+    max-width: 900px;
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   SEÇÃO DAS CIDADES
+================================ */
+
+#cidades {
+    padding: 60px 0;
+}
+
+#cidades h2 {
+    text-align: center;
+    color: #071952;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+
+/* ================================
+   GRID
+================================ */
+
+.grid-cidades {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ================================
+   CARDS
+================================ */
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    border-left: 5px solid #088395;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* CARD DO PRIMEIRO LUGAR */
+
+.card.destaque {
+    border-left-color: #f5b700;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #fffbea
+        );
+}
+
+
+/* POSIÇÃO */
+
+.posicao {
+    display: inline-block;
+
+    background-color: #071952;
+    color: white;
+
+    padding: 5px 14px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.destaque .posicao {
+    background-color: #f5a700;
+    color: #17202a;
+}
+
+
+/* TÍTULO */
+
+.card h3 {
+    font-size: 25px;
+    color: #071952;
+    margin-bottom: 12px;
+}
+
+
+/* TEXTO */
+
+.card p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+/* LINK */
+
+.card a {
+    display: inline-block;
+
+    background-color: #088395;
+    color: white;
+
+    padding: 10px 16px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background-color: #071952;
+}
+
+
+/* ================================
+   SOBRE
+================================ */
+
+.sobre {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.sobre p {
+    max-width: 900px;
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   RODAPÉ
+================================ */
+
+footer {
+    background-color: #071952;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 15px;
+
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .grid-cidades {
+        grid-template-columns: 1fr;
+    }
+
+    .card h3 {
+        font-size: 22px;
+    }
+
+}

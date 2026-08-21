@@ -1,0 +1,258 @@
+/* =========================================
+   RESET CSS
+========================================= */
+
+/* Zera margens, preenchimentos e ajusta o modelo de caixa */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Define altura total do documento */
+html,
+body {
+    height: 100%;
+}
+
+/* Rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Configurações gerais do corpo */
+body {
+    background-color: #f2f5f8;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* =========================================
+   TÍTULO PRINCIPAL
+========================================= */
+
+h1 {
+    background: linear-gradient(135deg, #071952, #088395);
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    font-size: 38px;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   TÍTULOS
+========================================= */
+
+h2 {
+    color: #071952;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #088395;
+
+    text-align: center;
+
+    font-size: 27px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   IMAGENS
+========================================= */
+
+img {
+    display: block;
+
+    width: 500px;
+    max-width: 90%;
+
+    height: auto;
+
+    margin: 20px auto;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease;
+}
+
+/* Efeito quando passar o mouse */
+img:hover {
+    transform: scale(1.02);
+}
+
+
+/* =========================================
+   PARÁGRAFOS
+========================================= */
+
+p {
+    width: 80%;
+    max-width: 900px;
+
+    margin: 15px auto;
+
+    color: #444;
+
+    font-size: 17px;
+
+    text-align: justify;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+a {
+    color: #088395;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+small {
+    display: block;
+
+    width: 80%;
+    max-width: 900px;
+
+    margin: 10px auto;
+
+    color: #666;
+
+    font-size: 14px;
+
+    text-align: center;
+}
+
+/* Efeito ao passar o mouse */
+a:hover {
+    color: #071952;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LINK DA IMAGEM
+========================================= */
+
+h3+a {
+    display: block;
+}
+
+
+/* =========================================
+   SEPARAÇÃO ENTRE AS CIDADES
+========================================= */
+
+h2 {
+    border-top: 3px solid #088395;
+
+    padding-top: 30px;
+
+    width: 80%;
+    max-width: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================
+   PRIMEIRA CIDADE
+========================================= */
+
+/* Destaque para a primeira posição */
+h2:first-of-type {
+    border-top: none;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 30px;
+        padding: 30px 15px;
+    }
+
+    h2 {
+        font-size: 25px;
+        width: 90%;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+
+    p {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    img,
+    figcaption {
+        width: 90%;
+        border-radius: 15px;
+    }
+}
+
+
+/* Celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        width: 92%;
+        font-size: 15px;
+    }
+
+    img,
+    figcaption {
+        width: 92%;
+        border-radius: 12px;
+    }
+}
